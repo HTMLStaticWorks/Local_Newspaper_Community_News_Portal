@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <title>NEWZ — Page Not Found (404 Error)</title>
+  <meta name="description" content="The requested article or page was not found in our archives. Navigate back to the NEWZ homepage.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Breaking News Ticker -->
+  <div class="breaking-ticker">
+    <div class="container ticker-wrap">
+      <div class="ticker-title">Breaking News</div>
+      <div class="ticker-content">
+        <span class="ticker-item">Mayor announces new green initiatives for community parks.</span>
+        <span class="ticker-item">Local high school football team clinches state championship.</span>
+        <span class="ticker-item">New organic food market opening downtown this Saturday.</span>
+        <span class="ticker-item">City Council approves budget for community library expansion.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Top Header -->
+  <header class="header-main">
+    <div class="container">
+      <div class="header-logo">The NEWZ Portal</div>
+      <div class="header-tagline">Independent Journalism for the Local Community • Est. 2026</div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="navbar-container">
+    <div class="container navbar">
+      <!-- Logo -->
+      <a href="index.html" class="navbar-logo">[NEWZ]</a>
+      
+      <!-- Desktop Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="rtl-toggle-btn" aria-label="Toggle RTL Direction"><i data-lucide="arrow-left-right"></i></button>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme Color"><i data-lucide="moon"></i></button>
+        <a href="login.html" class="btn btn-secondary" style="padding: 8px 16px;">Login</a>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Hamburger Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div class="drawer-header">
+      <span class="navbar-logo">[NEWZ]</span>
+      <button class="drawer-close-btn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home2.html">Home 2</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="drawer-actions">
+      <button class="rtl-toggle-btn btn btn-secondary"><i data-lucide="arrow-left-right"></i> Toggle RTL</button>
+      <button class="theme-toggle-btn btn btn-secondary"><i data-lucide="moon"></i> Toggle Theme</button>
+    </div>
+  </div>
+
+  <!-- 404 Block -->
+  <main class="section-padding" style="background-color: var(--color-bg-body);">
+    <div class="container" style="max-width: 600px; text-align: center;">
+      <div class="editorial-404">404</div>
+      <h2>Report Not Found</h2>
+      <p class="section-subtext" style="margin-bottom: 24px;">The article you are looking for has been retired, moved, or was never filed by our correspondents.</p>
+      <p style="font-size: 1.05rem; color: var(--color-text-muted); margin-bottom: 32px; line-height: 1.6;">
+        It is possible that the URL is misspelled or the digital print page was archived. Please check our main directories or return to the homepage to search recent dispatches.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-primary">Return Homepage</a>
+        <a href="blog.html" class="btn btn-secondary">Browse Archives</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-main section-padding">
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <div class="footer-logo">[NEWZ]</div>
+        <p class="footer-desc">Independent news and local community board listings. Providing rigorous local journalism, events schedules, and community columns since 1994.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Categories</div>
+        <ul class="footer-links">
+          <li><a href="blog.html?category=civic">Civic Affairs</a></li>
+          <li><a href="blog.html?category=sports">Local Sports</a></li>
+          <li><a href="blog.html?category=business">Local Business</a></li>
+          <li><a href="blog.html?category=education">School District</a></li>
+        </ul>
+      </div>
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Publications</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Weekly Broadsheet</a></li>
+          <li><a href="coming-soon.html">Daily Newsletter</a></li>
+          <li><a href="blog.html?category=classifieds">Classified Ad Placements</a></li>
+          <li><a href="events.html">Events Board</a></li>
+        </ul>
+      </div>
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About & Editorial Team</a></li>
+          <li><a href="contact.html">Press Room & Advertiser Form</a></li>
+          <li><a href="login.html">Subscriber Login</a></li>
+          <li><a href="coming-soon.html">Print Relaunch Clock</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 NEWZ Media Corporation. All rights reserved. Registered under Press Authority.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

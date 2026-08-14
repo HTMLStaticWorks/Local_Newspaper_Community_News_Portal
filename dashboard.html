@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <title>NEWZ — Subscriber Dashboard</title>
+  <meta name="description" content="Manage your NEWZ subscription, view saved articles, check delivery schedules, and update advertiser accounts.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    .db-section {
+      display: none;
+    }
+    .db-section.active {
+      display: block;
+    }
+    .db-article-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .db-article-row:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dashboard Drawer Overlay -->
+  <div class="db-drawer-overlay"></div>
+
+  <!-- Dashboard Mobile Header Bar -->
+  <div class="db-header-bar">
+    <div class="container db-header-content">
+      <button class="db-hamburger-btn" aria-label="Open Dashboard Menu"><i data-lucide="menu"></i></button>
+      <span class="db-header-logo">[NEWZ] Dashboard</span>
+      <div style="width: 40px;"></div> <!-- visual spacer -->
+    </div>
+  </div>
+
+  <!-- Dashboard Interface -->
+  <main class="section-padding" style="background-color: var(--color-bg-body);">
+    <div class="container">
+      <h2>Subscriber Portal</h2>
+      <p class="section-subtext">Manage digital newsletter preferences, billing details, and bookmarks.</p>
+
+      <div class="dashboard-grid">
+        <!-- Sidebar Menu -->
+        <aside class="db-sidebar">
+          <div class="db-brand-header" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: var(--weight-h1); text-transform: uppercase; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--color-border); text-align: center; width: 100%; display: flex; justify-content: center;">
+            <a href="index.html" class="navbar-logo">[NEWZ]</a>
+          </div>
+          <ul class="db-nav">
+            <li><a href="#overview" class="db-nav-link active" data-tab="overview"><i data-lucide="layout-dashboard"></i> Overview</a></li>
+            <li><a href="#subscriptions" class="db-nav-link" data-tab="subscriptions"><i data-lucide="credit-card"></i> Membership</a></li>
+            <li><a href="#saved" class="db-nav-link" data-tab="saved"><i data-lucide="bookmark"></i> Saved Articles</a></li>
+            <li><a href="#settings" class="db-nav-link" data-tab="settings"><i data-lucide="settings"></i> Profile Settings</a></li>
+            <li><button class="theme-toggle-btn db-nav-link" style="width: 100%; border: none; text-align: left; background: none; justify-content: flex-start; cursor: pointer;"><i data-lucide="moon"></i> Toggle Theme</button></li>
+            <li><button class="rtl-toggle-btn db-nav-link" style="width: 100%; border: none; text-align: left; background: none; justify-content: flex-start; cursor: pointer;"><i data-lucide="arrow-left-right"></i> Toggle RTL</button></li>
+            <li><a href="index.html" class="db-nav-link"><i data-lucide="home"></i> Return to Site</a></li>
+            <li><a href="login.html" class="db-nav-link" style="color: var(--color-error);"><i data-lucide="log-out"></i> Logout</a></li>
+          </ul>
+        </aside>
+
+        <!-- Content Panels -->
+        <div class="db-content">
+          <!-- Overview Tab -->
+          <div id="overview" class="db-section active">
+            <h3 style="margin-bottom: 24px; font-weight: var(--weight-h3);">Welcome Back, Jane!</h3>
+            
+            <div class="db-stats-grid">
+              <div class="db-stat-card">
+                <div class="db-stat-val">All-Access</div>
+                <div class="db-stat-lbl">Membership Level</div>
+              </div>
+              <div class="db-stat-card">
+                <div class="db-stat-val">12</div>
+                <div class="db-stat-lbl">Saved Articles</div>
+              </div>
+              <div class="db-stat-card">
+                <div class="db-stat-val">Active</div>
+                <div class="db-stat-lbl">Route Delivery</div>
+              </div>
+            </div>
+
+            <h4 style="margin-bottom: 16px;">Recent Digital Invoices</h4>
+            <div style="border: 1px solid var(--color-border); border-radius: var(--border-radius); overflow: hidden;">
+              <table style="width: 100%; border-collapse: collapse; font-family: var(--font-ui); font-size: var(--size-caption); text-align: left;">
+                <thead>
+                  <tr style="background-color: var(--color-secondary);">
+                    <th style="padding: 12px 16px;">Invoice ID</th>
+                    <th style="padding: 12px 16px;">Date</th>
+                    <th style="padding: 12px 16px;">Amount</th>
+                    <th style="padding: 12px 16px;">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px solid var(--color-border);">
+                    <td style="padding: 12px 16px;">#INV-2026-081</td>
+                    <td style="padding: 12px 16px;">Aug 01, 2026</td>
+                    <td style="padding: 12px 16px;">$9.99</td>
+                    <td style="padding: 12px 16px; color: var(--color-success); font-weight: var(--weight-bold-inline);">Paid</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 12px 16px;">#INV-2026-072</td>
+                    <td style="padding: 12px 16px;">Jul 01, 2026</td>
+                    <td style="padding: 12px 16px;">$9.99</td>
+                    <td style="padding: 12px 16px; color: var(--color-success); font-weight: var(--weight-bold-inline);">Paid</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Membership Tab -->
+          <div id="subscriptions" class="db-section">
+            <h3 style="margin-bottom: 12px;">All-Access Broadsheet Membership</h3>
+            <p style="color: var(--color-text-muted); font-size: var(--size-label); margin-bottom: 24px;">Your subscription renews automatically on September 1, 2026 via card ending in 4102.</p>
+            
+            <div style="background-color: var(--color-secondary); padding: 24px; border: 1px solid var(--color-border); border-radius: var(--border-radius); margin-bottom: 32px;">
+              <h4 style="margin-bottom: 12px;">Friday Print Route Delivery</h4>
+              <p style="font-size: var(--size-label); margin-bottom: 16px; color: var(--color-text-muted);">Weekly print broadsheet delivered every Friday morning by 7:30 AM to:</p>
+              <address style="font-style: normal; font-family: var(--font-ui); font-size: var(--size-label); margin-bottom: 16px;">
+                42 Magnolia Lane, Apartment 4B<br>
+                Garden district, Media City, 90124
+              </address>
+              <button class="btn btn-secondary" style="padding: 8px 16px;">Update Address</button>
+              <button class="btn btn-secondary" style="padding: 8px 16px; color: var(--color-error);">Hold Delivery</button>
+            </div>
+          </div>
+
+          <!-- Saved Tab -->
+          <div id="saved" class="db-section">
+            <h3 style="margin-bottom: 24px;">Saved Reports & Columns</h3>
+            
+            <div style="display: flex; flex-direction: column;">
+              <div class="db-article-row">
+                <div>
+                  <h4 style="font-size: 1.15rem; margin-bottom: 4px;"><a href="blog-single.html">Zoning Reorganization Approved for Downtown</a></h4>
+                  <p style="font-size: var(--size-caption); color: var(--color-text-muted); margin-bottom: 0;">By Sarah Chen • Saved on Aug 14, 2026</p>
+                </div>
+                <button class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;"><i data-lucide="trash-2" style="width: 14px; height: 14px;"></i></button>
+              </div>
+
+              <div class="db-article-row">
+                <div>
+                  <h4 style="font-size: 1.15rem; margin-bottom: 4px;"><a href="blog-single.html">Local Marathon Raises Record Funds</a></h4>
+                  <p style="font-size: var(--size-caption); color: var(--color-text-muted); margin-bottom: 0;">By Dave Miller • Saved on Aug 11, 2026</p>
+                </div>
+                <button class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.8rem;"><i data-lucide="trash-2" style="width: 14px; height: 14px;"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Settings Tab -->
+          <div id="settings" class="db-section">
+            <h3 style="margin-bottom: 24px;">Profile & Security</h3>
+            
+            <form id="profile-form" data-validate="true">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="form-group">
+                  <label for="prof-name" class="form-label">Full Name</label>
+                  <input type="text" id="prof-name" class="form-control" value="Jane Doe" required>
+                  <div class="error-message">Name cannot be blank.</div>
+                </div>
+                <div class="form-group">
+                  <label for="prof-email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" value="jane.doe@example.com" required>
+                  <div class="error-message">Please enter a valid email.</div>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-top: 12px;">
+                <label class="form-checkbox-label">
+                  <input type="checkbox" checked>
+                  <span>Subscribe to Daily News Briefings (Email digest)</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="form-checkbox-label">
+                  <input type="checkbox" checked>
+                  <span>Receive breaking news alerts via SMS text updates</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="margin-top: 12px;">Save Changes</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <!-- Interactive Dashboard tabs script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.db-nav-link[data-tab]');
+      const sections = document.querySelectorAll('.db-section');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetTab = link.getAttribute('data-tab');
+
+          // Set active navigation tab
+          navLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+
+          // Reveal matching content section
+          sections.forEach(sec => {
+            if (sec.id === targetTab) {
+              sec.classList.add('active');
+            } else {
+              sec.classList.remove('active');
+            }
+          });
+        });
+      });
+
+      // Mobile Drawer Toggler for Dashboard
+      const dbHamburgerBtn = document.querySelector('.db-hamburger-btn');
+      const dbSidebar = document.querySelector('.db-sidebar');
+      const dbOverlay = document.querySelector('.db-drawer-overlay');
+
+      if (dbHamburgerBtn && dbSidebar && dbOverlay) {
+        dbHamburgerBtn.addEventListener('click', () => {
+          dbSidebar.classList.add('open');
+          dbOverlay.classList.add('active');
+        });
+
+        const closeDbDrawer = () => {
+          dbSidebar.classList.remove('open');
+          dbOverlay.classList.remove('active');
+        };
+
+        dbOverlay.addEventListener('click', closeDbDrawer);
+
+        // Close when clicking any nav link
+        const dbNavLinks = document.querySelectorAll('.db-nav-link');
+        dbNavLinks.forEach(link => {
+          link.addEventListener('click', closeDbDrawer);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

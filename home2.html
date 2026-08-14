@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <title>NEWZ — Broadsheet Edition & Local Opinion</title>
+  <meta name="description" content="Discover alternative broadsheet perspectives on NEWZ, featuring community columns, local debates, interactive polls, and multimedia podcast updates.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Breaking News Ticker -->
+  <div class="breaking-ticker">
+    <div class="container ticker-wrap">
+      <div class="ticker-title">Breaking News</div>
+      <div class="ticker-content">
+        <span class="ticker-item">Mayor announces new green initiatives for community parks.</span>
+        <span class="ticker-item">Local high school football team clinches state championship.</span>
+        <span class="ticker-item">New organic food market opening downtown this Saturday.</span>
+        <span class="ticker-item">City Council approves budget for community library expansion.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Top Header -->
+  <header class="header-main">
+    <div class="container">
+      <div class="header-logo">The NEWZ Portal</div>
+      <div class="header-tagline">Independent Journalism for the Local Community • Est. 2026</div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="navbar-container">
+    <div class="container navbar">
+      <!-- Logo -->
+      <a href="index.html" class="navbar-logo">[NEWZ]</a>
+      
+      <!-- Desktop Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html" class="active">Home 2</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="rtl-toggle-btn" aria-label="Toggle RTL Direction"><i data-lucide="arrow-left-right"></i></button>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme Color"><i data-lucide="moon"></i></button>
+        <a href="login.html" class="btn btn-secondary" style="padding: 8px 16px;">Login</a>
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-btn" aria-label="Open Navigation Menu"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Hamburger Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div class="drawer-header">
+      <span class="navbar-logo">[NEWZ]</span>
+      <button class="drawer-close-btn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home2.html" class="active">Home 2</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="drawer-actions">
+      <button class="rtl-toggle-btn btn btn-secondary"><i data-lucide="arrow-left-right"></i> Toggle RTL</button>
+      <button class="theme-toggle-btn btn btn-secondary"><i data-lucide="moon"></i> Toggle Theme</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Premium Luxury Broadsheet Hero (Full Width Background) -->
+    <section class="premium-hero" style="min-height: 650px; background-color: #111111; color: #ffffff; border-bottom: 2px solid var(--color-accent); padding: 100px 0;">
+      <!-- Background Image -->
+      <div class="premium-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80'); opacity: 0.25;"></div>
+      <!-- Dark Overlay Gradient -->
+      <div class="premium-hero-dark-overlay"></div>
+      
+      <div class="container premium-hero-container">
+        <div class="reveal-staggered" style="max-width: 900px; margin: 0 auto; text-align: center;">
+          <span class="hero-tag" style="background: rgba(184, 29, 36, 0.15); padding: 6px 16px; border-radius: 50px; border: 1px solid var(--color-accent); font-size: 0.85rem; letter-spacing: 0.15em; font-family: var(--font-ui); font-weight: var(--weight-bold-inline); text-transform: uppercase; color: var(--color-accent); display: inline-block;">City Investigation</span>
+          
+          <h1 class="hero-title" style="font-family: var(--font-heading); font-size: clamp(2.5rem, 6vw, 4.5rem); color: #ffffff; line-height: 1.1; margin: 24px 0 20px 0; text-shadow: 0 4px 20px rgba(0,0,0,0.4); font-weight: var(--weight-h1);">
+            Inside the Grid: The Funding Gap of Local Infrastructure
+          </h1>
+          
+          <p class="hero-lead" style="font-size: var(--size-lead); color: rgba(255, 255, 255, 0.8); line-height: 1.7; max-width: 750px; margin: 0 auto 36px auto; font-family: var(--font-body);">
+            An investigative breakdown of the school renovation delays reveals supply chain bottlenecks and planning oversights in municipal budget management.
+          </p>
+          
+          <div class="hero-meta" style="justify-content: center; gap: 24px; color: rgba(255, 255, 255, 0.6); margin-bottom: 40px; display: flex; font-family: var(--font-ui); font-size: var(--size-caption);">
+            <span style="display: flex; align-items: center; gap: 6px;"><i data-lucide="user" style="width: 15px; height: 15px; color: var(--color-accent);"></i> By Arthur Sterling</span>
+            <span style="display: flex; align-items: center; gap: 6px;"><i data-lucide="calendar" style="width: 15px; height: 15px; color: var(--color-accent);"></i> August 14, 2026</span>
+            <span style="display: flex; align-items: center; gap: 6px;"><i data-lucide="clock" style="width: 15px; height: 15px; color: var(--color-accent);"></i> 8 Min Read</span>
+          </div>
+          
+          <div style="margin-bottom: 20px;">
+            <a href="blog-single.html" class="btn btn-primary" style="padding: 16px 40px; font-size: 1rem; border-radius: 4px; box-shadow: 0 4px 20px rgba(184, 29, 36, 0.5);">Read Deep Report</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Horizontal Trending Highlights -->
+    <div style="background-color: var(--color-bg-paper); border-bottom: 1px solid var(--color-border); padding: 24px 0; position: relative; z-index: 5;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+          
+          <article style="border-right: 1px solid var(--color-border); padding-right: 24px;">
+            <div style="font-family: var(--font-ui); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--color-accent); margin-bottom: 6px;">Trending #1</div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 6px; font-weight: var(--weight-h3);"><a href="blog-single.html" style="color: var(--color-primary);">Historic Theatre to Undergo $2M Renovation</a></h3>
+            <p style="font-size: var(--size-caption); color: var(--color-text-muted); margin-bottom: 8px;">Private donors step forward to restore original plaster reliefs and retro seats.</p>
+            <div style="font-family: var(--font-ui); font-size: 0.8rem; color: var(--color-text-muted);">By Sarah Chen • 3 Min Read</div>
+          </article>
+
+          <article style="border-right: 1px solid var(--color-border); padding-right: 24px;">
+            <div style="font-family: var(--font-ui); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--color-accent); margin-bottom: 6px;">Trending #2</div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 6px; font-weight: var(--weight-h3);"><a href="blog-single.html" style="color: var(--color-primary);">Organic Market Confirms Opening Hours</a></h3>
+            <p style="font-size: var(--size-caption); color: var(--color-text-muted); margin-bottom: 8px;">Downtown vendors promise pesticide-free local honey, cheese, and heirloom crops.</p>
+            <div style="font-family: var(--font-ui); font-size: 0.8rem; color: var(--color-text-muted);">By Dave Miller • 2 Min Read</div>
+          </article>
+
+          <article>
+            <div style="font-family: var(--font-ui); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--color-accent); margin-bottom: 6px;">Trending #3</div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 6px; font-weight: var(--weight-h3);"><a href="blog-single.html" style="color: var(--color-primary);">School Board to Debate Sports Allocations</a></h3>
+            <p style="font-size: var(--size-caption); color: var(--color-text-muted); margin-bottom: 8px;">Track team pushes for synthetic ground layering following rainy season issues.</p>
+            <div style="font-family: var(--font-ui); font-size: 0.8rem; color: var(--color-text-muted);">By Mark Gable • 4 Min Read</div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Community Poll Section -->
+    <section class="section-padding" style="background-color: var(--color-bg-body);">
+      <div class="container" style="max-width: 800px;">
+        <h2>Reader Opinion</h2>
+        <p class="section-subtext">Have your say in the local debate. Your vote represents community voices.</p>
+        
+        <div class="poll-card">
+          <div class="poll-question">Do you support the rezoning proposal to allow multi-family housing in the historic center?</div>
+          <div class="poll-options">
+            <button class="poll-option-btn" data-option="option1">
+              <span class="poll-option-progress"></span>
+              <span class="poll-option-text">Yes, it will revitalize local commerce and housing access.</span>
+              <span class="poll-option-percent"></span>
+            </button>
+            <button class="poll-option-btn" data-option="option2">
+              <span class="poll-option-progress"></span>
+              <span class="poll-option-text">No, it will ruin the architectural heritage of the center.</span>
+              <span class="poll-option-percent"></span>
+            </button>
+            <button class="poll-option-btn" data-option="option3">
+              <span class="poll-option-progress"></span>
+              <span class="poll-option-text">Undecided, I need more details on maximum heights allowed.</span>
+              <span class="poll-option-percent"></span>
+            </button>
+          </div>
+          <div class="poll-meta">Click an option above to cast your vote and view results.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Broadsheet Multi-Column Category Grid -->
+    <section class="section-padding" style="background-color: var(--color-bg-paper); border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <h2>News From the Desk</h2>
+        <p class="section-subtext">Recent stories from our municipal and cultural correspondents.</p>
+        
+        <div class="broadsheet-grid">
+          <!-- Col 1: Civic Focus -->
+          <div>
+            <div style="border-bottom: 2px solid var(--color-accent); padding-bottom: 8px; margin-bottom: 16px; font-family: var(--font-ui); font-weight: var(--weight-bold-inline); text-transform: uppercase; text-align: center;">Civic Focus</div>
+            <article class="card" style="border: none; padding: 0; box-shadow: none;">
+              <div class="card-img-wrap" style="aspect-ratio: 16/10; margin-bottom: 16px;">
+                <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=500&q=80" alt="Municipal council banner">
+              </div>
+              <h3 class="card-title" style="font-size: 1.25rem; min-height: auto; margin-bottom: 8px;">Green Parks Initiatives Unveiled</h3>
+              <p class="card-desc" style="font-size: 0.95rem; min-height: auto;">City representatives propose solar-light tracks and public rainwater harvesting barrels for city center reserves.</p>
+              <div class="card-meta" style="border-top: none; padding-top: 0; justify-content: center; gap: 12px;">
+                <span>By Sarah Chen</span>
+                <span>• 4 Min Read</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Col 2: Education & School District -->
+          <div>
+            <div style="border-bottom: 2px solid var(--color-accent); padding-bottom: 8px; margin-bottom: 16px; font-family: var(--font-ui); font-weight: var(--weight-bold-inline); text-transform: uppercase; text-align: center;">School District</div>
+            <article class="card" style="border: none; padding: 0; box-shadow: none;">
+              <div class="card-img-wrap" style="aspect-ratio: 16/10; margin-bottom: 16px;">
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=500&q=80" alt="Students writing tests">
+              </div>
+              <h3 class="card-title" style="font-size: 1.25rem; min-height: auto; margin-bottom: 8px;">Pilot AI Tutor Curriculums Expand</h3>
+              <p class="card-desc" style="font-size: 0.95rem; min-height: auto;">Initial tests show an average increase of twelve percent in algebra speed metrics among ninth graders using software aids.</p>
+              <div class="card-meta" style="border-top: none; padding-top: 0; justify-content: center; gap: 12px;">
+                <span>By Mark Gable</span>
+                <span>• 6 Min Read</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Col 3: Business Column -->
+          <div>
+            <div style="border-bottom: 2px solid var(--color-accent); padding-bottom: 8px; margin-bottom: 16px; font-family: var(--font-ui); font-weight: var(--weight-bold-inline); text-transform: uppercase; text-align: center;">Business Log</div>
+            <article class="card" style="border: none; padding: 0; box-shadow: none;">
+              <div class="card-img-wrap" style="aspect-ratio: 16/10; margin-bottom: 16px;">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=500&q=80" alt="Office workspace tower">
+              </div>
+              <h3 class="card-title" style="font-size: 1.25rem; min-height: auto; margin-bottom: 8px;">Quill & Page Celebrates 20 Years</h3>
+              <p class="card-desc" style="font-size: 0.95rem; min-height: auto;">Local merchants credit the store with maintaining foot traffic and neighborhood activity during e-commerce shifts.</p>
+              <div class="card-meta" style="border-top: none; padding-top: 0; justify-content: center; gap: 12px;">
+                <span>By Elena Rostova</span>
+                <span>• 5 Min Read</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Podcast / Audio Feature Section -->
+    <section class="section-padding" style="background-color: var(--color-bg-body); border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <h2>NEWZ Podcast Spotlights</h2>
+        <p class="section-subtext">Listen to investigative audios and local news commentaries from our editorial room.</p>
+        
+        <div class="editorial-grid">
+          <!-- Video Embed card -->
+          <div class="card" style="align-items: flex-start; text-align: left; padding: 24px;">
+            <div style="width: 100%; aspect-ratio: 16/9; background-color: #000; border-radius: var(--border-radius); overflow: hidden; position: relative; margin-bottom: 20px;">
+              <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80" alt="Video play thumbnail" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.75;">
+              <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 64px; height: 64px; background: rgba(184, 29, 36, 0.9); border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; color: #fff;">
+                <i data-lucide="play" style="width: 28px; height: 28px; fill: #fff;"></i>
+              </div>
+            </div>
+            <h3 class="card-title" style="min-height: auto; margin-bottom: 8px;">Watch: Restoring the Historic Royal Theatre</h3>
+            <p class="card-desc" style="min-height: auto; margin-bottom: 16px;">Step inside the theatre with lead historical architect Margaret Thorne as she details restoration efforts for the 1920s architecture.</p>
+            <div class="card-meta" style="border-top: none; padding-top: 0;">
+              <span>12 Minutes Video Report</span>
+            </div>
+          </div>
+
+          <!-- Podcast Player widget -->
+          <div class="card" style="align-items: flex-start; text-align: left; padding: 24px;">
+            <div class="audio-player-container" style="margin: 0 0 20px 0; width: 100%; box-sizing: border-box;">
+              <div class="player-icon"><i data-lucide="mic"></i></div>
+              <div class="player-info">
+                <div class="player-title">Episode 48: The Broadsheet Talk</div>
+                <div class="player-subtitle">Local Journalism & Public Trust</div>
+              </div>
+            </div>
+            <h3 class="card-title" style="min-height: auto; margin-bottom: 8px;">Community Voices Podcast</h3>
+            <p class="card-desc" style="min-height: auto; margin-bottom: 24px;">We discuss the zoning debate with Sarah Chen and local real estate brokers. Learn about density, height codes, and historical heritage.</p>
+            <audio controls class="custom-audio">
+              <source src="#" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Static Testimonial Grid -->
+    <section class="section-padding" style="background-color: var(--color-bg-paper); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <h2>What Our Readers Say</h2>
+        <p class="section-subtext">We thank our dedicated subscribers for keeping our newsroom running.</p>
+        
+        <div class="news-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          <div class="card">
+            <p class="testimonial-quote" style="font-size: 1.15rem; margin-bottom: 16px;">"NEWZ is the only publication that actually reports on what happens in our municipal town planning meetings. It keeps the administration accountable."</p>
+            <div class="testimonial-author">Margaret Thorne</div>
+            <div class="testimonial-title">Retired Educator</div>
+          </div>
+          
+          <div class="card">
+            <p class="testimonial-quote" style="font-size: 1.15rem; margin-bottom: 16px;">"I found our graphic designer and sold my antique Heidelberg letterpress using the classifieds. The local community focus makes it extremely useful."</p>
+            <div class="testimonial-author">Leo Vance</div>
+            <div class="testimonial-title">Vance Studio Hub</div>
+          </div>
+
+          <div class="card">
+            <p class="testimonial-quote" style="font-size: 1.15rem; margin-bottom: 16px;">"The Friday print edition is a staple at my breakfast table. The typography layout and in-depth articles feel like reading a premium national broadsheet."</p>
+            <div class="testimonial-author">Diana Kincaid</div>
+            <div class="testimonial-title">Kincaid Real Estate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-main section-padding">
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <div class="footer-logo">[NEWZ]</div>
+        <p class="footer-desc">Independent news and local community board listings. Providing rigorous local journalism, events schedules, and community columns since 1994.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Categories</div>
+        <ul class="footer-links">
+          <li><a href="blog.html?category=civic">Civic Affairs</a></li>
+          <li><a href="blog.html?category=sports">Local Sports</a></li>
+          <li><a href="blog.html?category=business">Local Business</a></li>
+          <li><a href="blog.html?category=education">School District</a></li>
+        </ul>
+      </div>
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Publications</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Weekly Broadsheet</a></li>
+          <li><a href="coming-soon.html">Daily Newsletter</a></li>
+          <li><a href="blog.html?category=classifieds">Classified Ad Placements</a></li>
+          <li><a href="events.html">Events Board</a></li>
+        </ul>
+      </div>
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About & Editorial Team</a></li>
+          <li><a href="contact.html">Press Room & Advertiser Form</a></li>
+          <li><a href="login.html">Subscriber Login</a></li>
+          <li><a href="coming-soon.html">Print Relaunch Clock</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 NEWZ Media Corporation. All rights reserved. Registered under Press Authority.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

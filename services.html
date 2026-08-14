@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <title>NEWZ — Subscription Services & Advertising Packages</title>
+  <meta name="description" content="View subscription plans, weekly print newspaper delivery zones, local classified ad costs, and business promotion rates on NEWZ.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Service page pricing table styling */
+    .pricing-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 40px 0;
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      background-color: var(--color-bg-paper);
+    }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-family: var(--font-ui);
+      font-size: var(--size-label);
+      min-width: 600px;
+    }
+    [dir="rtl"] .pricing-table {
+      text-align: right;
+    }
+    .pricing-table th, .pricing-table td {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .pricing-table th {
+      background-color: var(--color-secondary);
+      font-weight: var(--weight-bold-inline);
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .pricing-table tr:last-child td {
+      border-bottom: none;
+    }
+    .check-icon {
+      color: var(--color-success);
+      width: 18px;
+      height: 18px;
+    }
+    .cross-icon {
+      color: var(--color-text-muted);
+      opacity: 0.4;
+      width: 18px;
+      height: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Breaking News Ticker -->
+  <div class="breaking-ticker">
+    <div class="container ticker-wrap">
+      <div class="ticker-title">Breaking News</div>
+      <div class="ticker-content">
+        <span class="ticker-item">Mayor announces new green initiatives for community parks.</span>
+        <span class="ticker-item">Local high school football team clinches state championship.</span>
+        <span class="ticker-item">New organic food market opening downtown this Saturday.</span>
+        <span class="ticker-item">City Council approves budget for community library expansion.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Top Header -->
+  <header class="header-main">
+    <div class="container">
+      <div class="header-logo">The NEWZ Portal</div>
+      <div class="header-tagline">Independent Journalism for the Local Community • Est. 2026</div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="navbar-container">
+    <div class="container navbar">
+      <!-- Logo -->
+      <a href="index.html" class="navbar-logo">[NEWZ]</a>
+      
+      <!-- Desktop Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="rtl-toggle-btn" aria-label="Toggle RTL Direction"><i data-lucide="arrow-left-right"></i></button>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme Color"><i data-lucide="moon"></i></button>
+        <a href="login.html" class="btn btn-secondary" style="padding: 8px 16px;">Login</a>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Hamburger Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div class="drawer-header">
+      <span class="navbar-logo">[NEWZ]</span>
+      <button class="drawer-close-btn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home2.html">Home 2</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="drawer-actions">
+      <button class="rtl-toggle-btn btn btn-secondary"><i data-lucide="arrow-left-right"></i> Toggle RTL</button>
+      <button class="theme-toggle-btn btn btn-secondary"><i data-lucide="moon"></i> Toggle Theme</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Subscriptions Intro -->
+    <section class="section-padding" style="background-color: var(--color-bg-paper);">
+      <div class="container">
+        <h2>Choose Your Plan</h2>
+        <p class="section-subtext">Rigorous, fact-checked reporting takes resources. Choose a plan to help fund our news desk reporters.</p>
+        
+        <div class="news-grid">
+          <!-- Card 1 -->
+          <div>
+            <div class="card">
+              <h3 class="card-title" style="margin-top: 12px; min-height: auto;">Digital Basic</h3>
+              <div style="font-size: 2rem; font-family: var(--font-heading); color: var(--color-accent); margin: 16px 0;">$4.99<span style="font-size: 1rem; color: var(--color-text-muted);">/mo</span></div>
+              <p class="card-desc" style="min-height: auto; margin-bottom: 24px;">Full online archives, breaking news warnings on email, and mobile-friendly layouts on any screen size.</p>
+              <button class="btn btn-secondary btn-full" onclick="location.href='register.html'">Get Digital Basic</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div>
+            <div class="card" style="border-color: var(--color-accent); box-shadow: 0 8px 30px rgba(184, 29, 36, 0.08);">
+              <span class="card-badge" style="top: -12px; left: 50%; transform: translateX(-50%);">Recommended</span>
+              <h3 class="card-title" style="margin-top: 12px; min-height: auto;">All-Access Broadsheet</h3>
+              <div style="font-size: 2rem; font-family: var(--font-heading); color: var(--color-accent); margin: 16px 0;">$9.99<span style="font-size: 1rem; color: var(--color-text-muted);">/mo</span></div>
+              <p class="card-desc" style="min-height: auto; margin-bottom: 24px;">Complete digital access plus a classic broadsheet print edition hand-delivered every Friday morning.</p>
+              <button class="btn btn-primary btn-full" onclick="location.href='register.html'">Get All-Access</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div>
+            <div class="card">
+              <h3 class="card-title" style="margin-top: 12px; min-height: auto;">Patron Sponsor</h3>
+              <div style="font-size: 2rem; font-family: var(--font-heading); color: var(--color-accent); margin: 16px 0;">$24.99<span style="font-size: 1rem; color: var(--color-text-muted);">/mo</span></div>
+              <p class="card-desc" style="min-height: auto; margin-bottom: 24px;">Support local reporting teams, receive Friday prints, name in print, and invitations to editor briefings.</p>
+              <button class="btn btn-secondary btn-full" onclick="location.href='register.html'">Become Patron</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plan Feature Comparison Table -->
+    <section class="section-padding" style="background-color: var(--color-bg-body); border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <h2>Features Comparison</h2>
+        <p class="section-subtext">Compare the exact features included in our digital and community broadsheet memberships.</p>
+        
+        <div class="pricing-table-wrap">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Benefits & Access</th>
+                <th>Digital Basic</th>
+                <th>All-Access Broadsheet</th>
+                <th>Patron Sponsor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Unlimited Online Articles</td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+              </tr>
+              <tr>
+                <td>Mobile App & Offline Sync</td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+              </tr>
+              <tr>
+                <td>Digital Archive Access (since 1994)</td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+              </tr>
+              <tr>
+                <td>Ad-Free Web Reading Experience</td>
+                <td><i data-lucide="minus" class="cross-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+              </tr>
+              <tr>
+                <td>Weekly Friday Broadsheet Delivery</td>
+                <td><i data-lucide="minus" class="cross-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+              </tr>
+              <tr>
+                <td>Sponsor Listing in Editorial Page</td>
+                <td><i data-lucide="minus" class="cross-icon"></i></td>
+                <td><i data-lucide="minus" class="cross-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+              </tr>
+              <tr>
+                <td>Quarterly Editor Assembly Invites</td>
+                <td><i data-lucide="minus" class="cross-icon"></i></td>
+                <td><i data-lucide="minus" class="cross-icon"></i></td>
+                <td><i data-lucide="check" class="check-icon"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classified Insertions & Business Promotion Rates -->
+    <section class="section-padding" style="background-color: var(--color-bg-paper); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <h2>Promote & Sell Locally</h2>
+        <p class="section-subtext">Publish classified ads or business marketing campaigns to reach over thirty thousand print and digital readers weekly.</p>
+        
+        <div class="news-grid">
+          <!-- Item 1 -->
+          <div>
+            <div class="card">
+              <span class="card-badge" style="background-color: var(--color-primary);">Classifieds</span>
+              <h3 class="card-title" style="margin-top: 12px; min-height: auto;">Classified Ads</h3>
+              <p class="card-desc" style="min-height: auto; margin-bottom: 20px;">Perfect for selling items, renting real estate, announcing community panels, or publishing local help-wanted requests.</p>
+              <div style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 24px; color: var(--color-accent);">Starts at $15 <span style="font-size: 0.9rem; color: var(--color-text-muted);">/ Week</span></div>
+              <button class="btn btn-secondary btn-full" onclick="location.href='contact.html'">Book Classified Ad</button>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div>
+            <div class="card">
+              <span class="card-badge" style="background-color: var(--color-primary);">Display Ads</span>
+              <h3 class="card-title" style="margin-top: 12px; min-height: auto;">Local Business Display</h3>
+              <p class="card-desc" style="min-height: auto; margin-bottom: 20px;">Place graphical banners inside our digital news feed or half/full page printed ads inside the Friday paper pages.</p>
+              <div style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 24px; color: var(--color-accent);">Starts at $120 <span style="font-size: 0.9rem; color: var(--color-text-muted);">/ Insertion</span></div>
+              <button class="btn btn-secondary btn-full" onclick="location.href='contact.html'">View Media Kit</button>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div>
+            <div class="card">
+              <span class="card-badge" style="background-color: var(--color-primary);">Press Kit</span>
+              <h3 class="card-title" style="margin-top: 12px; min-height: auto;">Press Releases</h3>
+              <p class="card-desc" style="min-height: auto; margin-bottom: 20px;">Submit corporate and institutional press releases for review and distribution across our community bulletins feeds.</p>
+              <div style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 24px; color: var(--color-accent);">Free Submission</div>
+              <button class="btn btn-primary btn-full" onclick="location.href='contact.html'">Submit Release</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-main section-padding">
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <div class="footer-logo">[NEWZ]</div>
+        <p class="footer-desc">Independent news and local community board listings. Providing rigorous local journalism, events schedules, and community columns since 1994.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Categories</div>
+        <ul class="footer-links">
+          <li><a href="blog.html?category=civic">Civic Affairs</a></li>
+          <li><a href="blog.html?category=sports">Local Sports</a></li>
+          <li><a href="blog.html?category=business">Local Business</a></li>
+          <li><a href="blog.html?category=education">School District</a></li>
+        </ul>
+      </div>
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Publications</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Weekly Broadsheet</a></li>
+          <li><a href="coming-soon.html">Daily Newsletter</a></li>
+          <li><a href="blog.html?category=classifieds">Classified Ad Placements</a></li>
+          <li><a href="events.html">Events Board</a></li>
+        </ul>
+      </div>
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About & Editorial Team</a></li>
+          <li><a href="contact.html">Press Room & Advertiser Form</a></li>
+          <li><a href="login.html">Subscriber Login</a></li>
+          <li><a href="coming-soon.html">Print Relaunch Clock</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 NEWZ Media Corporation. All rights reserved. Registered under Press Authority.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

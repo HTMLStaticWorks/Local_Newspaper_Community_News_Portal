@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <title>NEWZ — Zoning Reorganization Approved for Downtown</title>
+  <meta name="description" content="Read our full report on the municipal council zoning vote introducing mixed-use zones to our historic city center.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Article layout specific overrides */
+    .article-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .article-header {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .article-title {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      margin-bottom: 16px;
+      line-height: 1.1;
+    }
+    .article-meta-bar {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-family: var(--font-ui);
+      font-size: var(--size-caption);
+      color: var(--color-text-muted);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      padding: 12px 0;
+      margin-bottom: 32px;
+    }
+    .article-meta-bar span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-content {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--color-text-body);
+    }
+    /* Elegant drop cap */
+    .article-content p:first-of-type::first-letter {
+      font-family: var(--font-heading);
+      font-size: 4rem;
+      float: left;
+      line-height: 0.8;
+      margin-top: 6px;
+      margin-right: 12px;
+      color: var(--color-accent);
+      font-weight: var(--weight-h1);
+    }
+    [dir="rtl"] .article-content p:first-of-type::first-letter {
+      float: right;
+      margin-right: 0;
+      margin-left: 12px;
+    }
+    .pullquote {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-style: italic;
+      border-left: 4px solid var(--color-accent);
+      padding-left: 24px;
+      margin: 40px 0;
+      color: var(--color-primary);
+      line-height: 1.4;
+    }
+    [dir="rtl"] .pullquote {
+      border-left: none;
+      border-right: 4px solid var(--color-accent);
+      padding-left: 0;
+      padding-right: 24px;
+    }
+    .author-card {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 24px;
+      background-color: var(--color-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      margin: 48px 0;
+    }
+    .author-img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .comments-area {
+      border-top: 1px solid var(--color-border);
+      padding-top: 48px;
+      margin-top: 48px;
+    }
+    .comment-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .comment-item {
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 20px;
+    }
+    .comment-item:last-child {
+      border-bottom: none;
+    }
+    .comment-meta {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-ui);
+      font-size: var(--size-caption);
+      color: var(--color-text-muted);
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Breaking News Ticker -->
+  <div class="breaking-ticker">
+    <div class="container ticker-wrap">
+      <div class="ticker-title">Breaking News</div>
+      <div class="ticker-content">
+        <span class="ticker-item">Mayor announces new green initiatives for community parks.</span>
+        <span class="ticker-item">Local high school football team clinches state championship.</span>
+        <span class="ticker-item">New organic food market opening downtown this Saturday.</span>
+        <span class="ticker-item">City Council approves budget for community library expansion.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Top Header -->
+  <header class="header-main">
+    <div class="container">
+      <div class="header-logo">The NEWZ Portal</div>
+      <div class="header-tagline">Independent Journalism for the Local Community • Est. 2026</div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="navbar-container">
+    <div class="container navbar">
+      <!-- Logo -->
+      <a href="index.html" class="navbar-logo">[NEWZ]</a>
+      
+      <!-- Desktop Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="rtl-toggle-btn" aria-label="Toggle RTL Direction"><i data-lucide="arrow-left-right"></i></button>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme Color"><i data-lucide="moon"></i></button>
+        <a href="login.html" class="btn btn-secondary" style="padding: 8px 16px;">Login</a>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Hamburger Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div class="drawer-header">
+      <span class="navbar-logo">[NEWZ]</span>
+      <button class="drawer-close-btn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home2.html">Home 2</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="drawer-actions">
+      <button class="rtl-toggle-btn btn btn-secondary"><i data-lucide="arrow-left-right"></i> Toggle RTL</button>
+      <button class="theme-toggle-btn btn btn-secondary"><i data-lucide="moon"></i> Toggle Theme</button>
+    </div>
+  </div>
+
+  <!-- Article Detail Container -->
+  <main class="section-padding">
+    <div class="container">
+      <article class="article-wrap">
+        <!-- Header -->
+        <header class="article-header">
+          <span class="hero-tag" style="margin-bottom: 12px;">Civic Affairs</span>
+          <h1 class="article-title">Zoning Reorganization Approved for Downtown</h1>
+          <p style="font-size: 1.35rem; color: var(--color-text-muted); line-height: 1.5; font-style: italic; margin-bottom: 24px;">City council voted 5-2 on mixed-use proposals, opening up residential projects in historical markets.</p>
+          
+          <div class="article-meta-bar">
+            <span><i data-lucide="user" style="width: 14px; height: 14px;"></i> By Sarah Chen</span>
+            <span><i data-lucide="calendar" style="width: 14px; height: 14px;"></i> August 14, 2026</span>
+            <span><i data-lucide="clock" style="width: 14px; height: 14px;"></i> 5 Min Read</span>
+          </div>
+
+          <div style="border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); margin-bottom: 32px; aspect-ratio: 16/9;">
+            <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80" alt="Zoning plan building details" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </header>
+
+        <!-- Custom Audio Player Widget -->
+        <div class="audio-player-container">
+          <div class="player-icon"><i data-lucide="headphones"></i></div>
+          <div class="player-info">
+            <div class="player-title">Listen to this Story</div>
+            <div class="player-subtitle">Audio podcast reading by Sarah Chen</div>
+            <audio controls class="custom-audio">
+              <source src="#" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+
+        <!-- Article Content -->
+        <div class="article-content">
+          <p>
+            During a tense city council board session last night, municipal planners officially approved the zoning modernization act. The proposal, which introduces mixed-use codes to the core commercial zone, passed with a 5-2 majority. The decision comes after months of public panels, environmental impact reports, and neighborhood business debates.
+          </p>
+          <p>
+            The newly designated zones allow local developers to build low-rise apartment units above ground-floor retail outlets, a practice previously banned under 1970s commercial rules. Proponents argue this will lower local rent pressures, support local shops by increasing foot traffic, and prevent outward city sprawl.
+          </p>
+
+          <blockquote class="pullquote">
+            "We are not proposing high-rise complexes. We want to return to a traditional European broadsheet town structure where store owners live above their printshops or bakeries."
+          </blockquote>
+
+          <p>
+            However, local preservation groups raised concerns. Opponents worry that modern building heights could block historical brick frontages and increase parking congestion. Council member Dave Miller, who voted against the measure, argued that city infrastructure grids are not yet optimized for higher residential densities.
+          </p>
+          <p>
+            "Our municipal sewage and water mains are nearly eighty years old," Miller stated during discussions. "Before we approve additional housing blocks, we must invest public resources into upgrading core utility lines."
+          </p>
+          <p>
+            Local merchants, on the other hand, welcome the zoning shift. Elena Rostova, owner of the Quill & Page Bookstore, believes the changes will revive downtown evening commerce. "Having more people living downtown keeps our streets safe, lit, and lively after office hours," she said.
+          </p>
+        </div>
+
+        <!-- Author Card -->
+        <div class="author-card">
+          <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=200&q=80" alt="Sarah Chen profile photo" class="author-img">
+          <div>
+            <h4 style="margin-bottom: 4px;">Sarah Chen</h4>
+            <div style="font-family: var(--font-ui); font-size: var(--size-caption); color: var(--color-accent); text-transform: uppercase; font-weight: var(--weight-bold-inline); margin-bottom: 8px;">Municipal Correspondent</div>
+            <p style="font-size: var(--size-caption); color: var(--color-text-muted); margin-bottom: 0; line-height: 1.4;">Sarah has covered city hall budgets and local urban policies for NEWZ since 2018. She previously wrote for metropolitan state dailies.</p>
+          </div>
+        </div>
+
+        <!-- Comments Area -->
+        <div class="comments-area">
+          <h3 style="margin-bottom: 32px;">Reader Discourse (2)</h3>
+          
+          <ul class="comment-list">
+            <li class="comment-item">
+              <div class="comment-meta">
+                <span style="font-weight: var(--weight-bold-inline); color: var(--color-primary);">Margaret Thorne</span>
+                <span>August 14, 2026</span>
+              </div>
+              <p style="font-size: var(--size-label); line-height: 1.5; color: var(--color-text-muted);">This is a reasonable step. We need housing downtown, and preserving facades can be managed through strict architectural guideline panels. It's better than clearing woodlands for suburban projects.</p>
+            </li>
+            <li class="comment-item">
+              <div class="comment-meta">
+                <span style="font-weight: var(--weight-bold-inline); color: var(--color-primary);">Leo Vance</span>
+                <span>August 14, 2026</span>
+              </div>
+              <p style="font-size: var(--size-label); line-height: 1.5; color: var(--color-text-muted);">Has the council considered public transit extensions? If we add density without bike lanes or electric shuttle grids, parking will become impossible.</p>
+            </li>
+          </ul>
+
+          <!-- Add Comment Form -->
+          <div style="background-color: var(--color-bg-body); padding: 32px; border-radius: var(--border-radius); border: 1px solid var(--color-border); margin-top: 40px;">
+            <h4 style="margin-bottom: 24px; font-weight: var(--weight-h3);">Join the Conversation</h4>
+            
+            <form id="comment-form" data-validate="true">
+              <div class="form-group">
+                <label for="comment-text" class="form-label">Comment</label>
+                <textarea id="comment-text" class="form-control" rows="5" required placeholder="Write your community response..."></textarea>
+                <div class="error-message">Comment body cannot be blank.</div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="form-group">
+                  <label for="comment-name" class="form-label">Name</label>
+                  <input type="text" id="comment-name" class="form-control" required placeholder="Jane Doe">
+                  <div class="error-message">Please enter your name.</div>
+                </div>
+                <div class="form-group">
+                  <label for="comment-email" class="form-label">Email</label>
+                  <input type="email" class="form-control" required placeholder="jane@example.com">
+                  <div class="error-message">Please enter a valid email.</div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" style="margin-top: 12px;">Submit Comment</button>
+            </form>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-main section-padding">
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <div class="footer-logo">[NEWZ]</div>
+        <p class="footer-desc">Independent news and local community board listings. Providing rigorous local journalism, events schedules, and community columns since 1994.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Categories</div>
+        <ul class="footer-links">
+          <li><a href="blog.html?category=civic">Civic Affairs</a></li>
+          <li><a href="blog.html?category=sports">Local Sports</a></li>
+          <li><a href="blog.html?category=business">Local Business</a></li>
+          <li><a href="blog.html?category=education">School District</a></li>
+        </ul>
+      </div>
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Publications</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Weekly Broadsheet</a></li>
+          <li><a href="coming-soon.html">Daily Newsletter</a></li>
+          <li><a href="blog.html?category=classifieds">Classified Ad Placements</a></li>
+          <li><a href="events.html">Events Board</a></li>
+        </ul>
+      </div>
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About & Editorial Team</a></li>
+          <li><a href="contact.html">Press Room & Advertiser Form</a></li>
+          <li><a href="login.html">Subscriber Login</a></li>
+          <li><a href="coming-soon.html">Print Relaunch Clock</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 NEWZ Media Corporation. All rights reserved. Registered under Press Authority.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

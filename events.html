@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <title>NEWZ — Community Events Board & Landmark Agenda</title>
+  <meta name="description" content="Discover and participate in local gatherings, town hall planning debates, and food festivals. Submit community events and explore landmark neighborhood venues.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Breaking News Ticker -->
+  <div class="breaking-ticker">
+    <div class="container ticker-wrap">
+      <div class="ticker-title">Breaking News</div>
+      <div class="ticker-content">
+        <span class="ticker-item">Mayor announces new green initiatives for community parks.</span>
+        <span class="ticker-item">Local high school football team clinches state championship.</span>
+        <span class="ticker-item">New organic food market opening downtown this Saturday.</span>
+        <span class="ticker-item">City Council approves budget for community library expansion.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Top Header -->
+  <header class="header-main">
+    <div class="container">
+      <div class="header-logo">The NEWZ Portal</div>
+      <div class="header-tagline">Independent Journalism for the Local Community • Est. 2026</div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="navbar-container">
+    <div class="container navbar">
+      <!-- Logo -->
+      <a href="index.html" class="navbar-logo">[NEWZ]</a>
+      
+      <!-- Desktop Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html" class="active">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="rtl-toggle-btn" aria-label="Toggle RTL Direction"><i data-lucide="arrow-left-right"></i></button>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme Color"><i data-lucide="moon"></i></button>
+        <a href="login.html" class="btn btn-secondary" style="padding: 8px 16px;">Login</a>
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-btn" aria-label="Open Navigation Menu"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Hamburger Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div class="drawer-header">
+      <span class="navbar-logo">[NEWZ]</span>
+      <button class="drawer-close-btn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home2.html">Home 2</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="drawer-actions">
+      <button class="rtl-toggle-btn btn btn-secondary"><i data-lucide="arrow-left-right"></i> Toggle RTL</button>
+      <button class="theme-toggle-btn btn btn-secondary"><i data-lucide="moon"></i> Toggle Theme</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Section 1: Events Premium Hero & Featured Events Grid -->
+    <section class="premium-hero" style="min-height: 550px;">
+      <!-- Background Image -->
+      <div class="premium-hero-bg" style="background-image: url('assets/img/events_hero.png');"></div>
+      <!-- Overlay Gradient -->
+      <div class="premium-hero-overlay"></div>
+      
+      <div class="container premium-hero-container">
+        <div class="premium-hero-layout reveal-staggered">
+          <!-- Left Glass Editorial Title -->
+          <div class="hero-left">
+            <div class="editorial-glass-card">
+              <span class="hero-tag" style="display: inline-block; color: var(--color-accent); font-family: var(--font-ui); font-size: var(--size-label); font-weight: var(--weight-bold-inline); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px;">Community Gatherings</span>
+              <h1 class="hero-title" style="font-family: var(--font-heading); font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: 1.1; margin-bottom: 24px; letter-spacing: -0.02em;">Local Events Board</h1>
+              <p class="hero-lead" style="font-size: var(--size-lead); line-height: 1.6; margin-bottom: 32px; color: var(--color-text-muted);">Stay connected with neighborhood milestones. Explore our compiled timetable of town hall discussions, art festivals, and charity fundraisers shaping our town's legacy.</p>
+              <a href="#events-list" class="btn btn-primary" style="padding: 16px 36px; font-size: 1rem; border-radius: 4px; box-shadow: 0 4px 15px rgba(184, 29, 36, 0.3);">Explore Timetable</a>
+            </div>
+          </div>
+
+          <!-- Right Spotlight Event Card -->
+          <div class="hero-right">
+            <div class="premium-hero-showcase">
+              <div class="premium-hero-img-primary" style="width: 100%; aspect-ratio: 16/11;">
+                <img src="assets/img/event_harvest_festival.png" alt="Local Harvest and Food Festival booth" style="width: 100%; height: 100%; object-fit: cover;">
+                <span class="card-badge" style="position: absolute; top: 16px; left: 16px; background-color: var(--color-accent); color: #ffffff; padding: 6px 12px; font-family: var(--font-ui); font-size: 0.8rem; font-weight: bold; border-radius: 2px; text-transform: uppercase;">Featured Gathering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Animated Community Agenda Timeline -->
+    <section id="events-list" class="section-padding" style="background-color: var(--color-bg-body);">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 8px;">Upcoming Agenda</h2>
+        <p class="section-subtext">A chronological roadmap of community workshops and municipal board hearings scheduled for this quarter.</p>
+        
+        <div class="timeline-wrap">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-badge"><i data-lucide="cookie" style="width: 16px; height: 16px;"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Saturday, August 22, 2026</div>
+              <h3 class="timeline-title">Annual Local Harvest & Food Festival</h3>
+              <p class="card-desc" style="min-height: auto; margin-bottom: 12px;">Celebrate community agriculture with tasting booths from 30+ regional farms, live acoustic music ensembles, and cider-pressing contests. Support local vendors and check out heirloom crop specialties.</p>
+              <div class="timeline-meta">
+                <span><i data-lucide="clock" style="width: 14px; height: 14px; color: var(--color-accent);"></i> 10:00 AM — 6:00 PM</span>
+                <span><i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--color-accent);"></i> Central Park Plaza</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-badge"><i data-lucide="landmark" style="width: 16px; height: 16px;"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Thursday, September 05, 2026</div>
+              <h3 class="timeline-title">Town Hall Debate on School District Funding</h3>
+              <p class="card-desc" style="min-height: auto; margin-bottom: 12px;">Join municipal council members and school board representatives to discuss the proposed property tax allocations for high school renovations, athletic turf grounds, and classroom expansion projects.</p>
+              <div class="timeline-meta">
+                <span><i data-lucide="clock" style="width: 14px; height: 14px; color: var(--color-accent);"></i> 7:00 PM — 9:00 PM</span>
+                <span><i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--color-accent);"></i> City Hall Assembly</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-badge"><i data-lucide="history" style="width: 16px; height: 16px;"></i></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Saturday, September 12, 2026</div>
+              <h3 class="timeline-title">History of Print Media Exhibition</h3>
+              <p class="card-desc" style="min-height: auto; margin-bottom: 12px;">Explore original wood-block typography, historic local newspaper covers, and antique publishing plates tracing the evolution of news journalism since 1890. Curated by historical archivist Elena Rostova.</p>
+              <div class="timeline-meta">
+                <span><i data-lucide="clock" style="width: 14px; height: 14px; color: var(--color-accent);"></i> 1:00 PM — 5:00 PM</span>
+                <span><i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--color-accent);"></i> Historical Museum Gallery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Venue Spotlight Collage -->
+    <section class="section-padding" style="background-color: var(--color-bg-paper); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 8px;">Landmark Neighborhood Venues</h2>
+        <p class="section-subtext">The architectural stages that host our local debates, cultural festivals, and community roundtables.</p>
+        
+        <div class="venue-collage-grid">
+          <!-- Venue 1 (Large) -->
+          <div>
+            <article class="venue-luxury-card">
+              <div class="venue-img-wrap">
+                <img src="assets/img/venue_royal_theatre.png" alt="Historic Royal Theatre Facade at night">
+              </div>
+              <div class="venue-info">
+                <h3 class="venue-name">The Historic Royal Theatre</h3>
+                <p class="venue-desc">Built in 1924, this landmark theater features original plaster reliefs, classical column arches, and vintage velvet seating. Host to our annual film showcases and municipal assembly panels.</p>
+                <div class="venue-meta-info">
+                  <span><i data-lucide="users" style="width: 14px; height: 14px; color: var(--color-accent);"></i> Capacity: 850 Seats</span>
+                  <span><i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--color-accent);"></i> 404 Royal Ave</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Venue 2 (Smaller) -->
+          <div>
+            <article class="venue-luxury-card">
+              <div class="venue-img-wrap" style="aspect-ratio: 1/1;">
+                <img src="assets/img/venue_park_plaza.png" alt="Central Park Plaza summer path">
+              </div>
+              <div class="venue-info">
+                <h3 class="venue-name">Central Park Plaza</h3>
+                <p class="venue-desc">An open-air stone plaza surrounded by lush green maples, perfect for outdoor markets, acoustic concerts, and summer food festivals.</p>
+                <div class="venue-meta-info" style="margin-top: 16px;">
+                  <span><i data-lucide="users" style="width: 14px; height: 14px; color: var(--color-accent);"></i> Capacity: 2000+ Outdoors</span>
+                  <span><i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--color-accent);"></i> Central Park</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Event Submission & Coordinator RSVP Form -->
+    <section class="section-padding" style="background-color: var(--color-bg-body);">
+      <div class="container" style="max-width: 650px;">
+        <h2 style="text-align: center; margin-bottom: 8px;">Submit a Local Event</h2>
+        <p class="section-subtext" style="margin-bottom: 40px;">Are you organizing a neighborhood meeting, sports league match, or cultural gallery? Request a listing on the NEWZ Events Board.</p>
+        
+        <div style="background-color: var(--color-bg-paper); padding: 48px; border: 1px solid var(--color-border); border-radius: var(--border-radius); box-shadow: var(--shadow);">
+          <form id="contact-form" data-validate="true">
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label for="event-title" class="form-label">Event Title</label>
+              <input type="text" id="event-title" class="form-control" placeholder="e.g., Downtown Clean-Up Day" required>
+              <div class="error-message">Event title cannot be left blank.</div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="event-date" class="form-label">Date</label>
+                <input type="date" id="event-date" class="form-control" required>
+                <div class="error-message">Please select a valid date.</div>
+              </div>
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="event-time" class="form-label">Time</label>
+                <input type="text" id="event-time" class="form-control" placeholder="e.g., 2:00 PM — 5:00 PM" required>
+                <div class="error-message">Please specify the timing.</div>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label for="event-location" class="form-label">Location / Venue</label>
+              <input type="text" id="event-location" class="form-control" placeholder="e.g., Central Park Pavilion" required>
+              <div class="error-message">Please provide event venue details.</div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label for="event-email" class="form-label">Organizer Email</label>
+              <input type="email" id="event-email" class="form-control" placeholder="organizer@example.com" required>
+              <div class="error-message">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 28px;">
+              <label for="event-details" class="form-label">Event Description</label>
+              <textarea id="event-details" class="form-control" rows="4" placeholder="Describe the purpose, ticketing options, and target audience..." required></textarea>
+              <div class="error-message">Please include some description of your event.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" style="padding: 16px 28px;">Submit Listing Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-main section-padding">
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <div class="footer-logo">[NEWZ]</div>
+        <p class="footer-desc">Independent news and local community board listings. Providing rigorous local journalism, events schedules, and community columns since 1994.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Categories</div>
+        <ul class="footer-links">
+          <li><a href="blog.html?category=civic">Civic Affairs</a></li>
+          <li><a href="blog.html?category=sports">Local Sports</a></li>
+          <li><a href="blog.html?category=business">Local Business</a></li>
+          <li><a href="blog.html?category=education">School District</a></li>
+        </ul>
+      </div>
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Publications</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Weekly Broadsheet</a></li>
+          <li><a href="coming-soon.html">Daily Newsletter</a></li>
+          <li><a href="blog.html?category=classifieds">Classified Ad Placements</a></li>
+          <li><a href="events.html" class="active">Events Board</a></li>
+        </ul>
+      </div>
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About & Editorial Team</a></li>
+          <li><a href="contact.html">Press Room & Advertiser Form</a></li>
+          <li><a href="login.html">Subscriber Login</a></li>
+          <li><a href="coming-soon.html">Print Relaunch Clock</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 NEWZ Media Corporation. All rights reserved. Registered under Press Authority.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

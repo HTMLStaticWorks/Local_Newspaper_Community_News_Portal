@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <title>NEWZ — Local Stories & Community Archives</title>
+  <meta name="description" content="Explore the full feed of community articles, sports updates, education records, classified columns, and events boards on NEWZ.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Breaking News Ticker -->
+  <div class="breaking-ticker">
+    <div class="container ticker-wrap">
+      <div class="ticker-title">Breaking News</div>
+      <div class="ticker-content">
+        <span class="ticker-item">Mayor announces new green initiatives for community parks.</span>
+        <span class="ticker-item">Local high school football team clinches state championship.</span>
+        <span class="ticker-item">New organic food market opening downtown this Saturday.</span>
+        <span class="ticker-item">City Council approves budget for community library expansion.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Top Header -->
+  <header class="header-main">
+    <div class="container">
+      <div class="header-logo">The NEWZ Portal</div>
+      <div class="header-tagline">Independent Journalism for the Local Community • Est. 2026</div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="navbar-container">
+    <div class="container navbar">
+      <!-- Logo -->
+      <a href="index.html" class="navbar-logo">[NEWZ]</a>
+      
+      <!-- Desktop Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="rtl-toggle-btn" aria-label="Toggle RTL Direction"><i data-lucide="arrow-left-right"></i></button>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme Color"><i data-lucide="moon"></i></button>
+        <a href="login.html" class="btn btn-secondary" style="padding: 8px 16px;">Login</a>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Hamburger Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div class="drawer-header">
+      <span class="navbar-logo">[NEWZ]</span>
+      <button class="drawer-close-btn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home2.html">Home 2</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="drawer-actions">
+      <button class="rtl-toggle-btn btn btn-secondary"><i data-lucide="arrow-left-right"></i> Toggle RTL</button>
+      <button class="theme-toggle-btn btn btn-secondary"><i data-lucide="moon"></i> Toggle Theme</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Search & Filter Block -->
+    <section class="section-padding" style="background-color: var(--color-bg-paper);">
+      <div class="container">
+        <h2>Newsroom Archives</h2>
+        <p class="section-subtext">Filter articles by municipal categories, events, or local classified listings.</p>
+        
+        <!-- Search bar input -->
+        <div style="max-width: 600px; margin: 0 auto 40px auto; display: flex; gap: 12px;">
+          <input type="text" id="archive-search" class="form-control" placeholder="Search archives by keyword..." style="flex-grow: 1; padding: 14px 20px;">
+          <button class="btn btn-primary" style="padding: 14px 24px;"><i data-lucide="search" style="width: 18px; height: 18px;"></i></button>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="category-filters">
+          <button class="filter-btn active" data-filter="all">All Records</button>
+          <button class="filter-btn" data-filter="civic">Civic Affairs</button>
+          <button class="filter-btn" data-filter="sports">Sports</button>
+          <button class="filter-btn" data-filter="business">Local Business</button>
+          <button class="filter-btn" data-filter="education">School District</button>
+          <button class="filter-btn" data-filter="classifieds">Classifieds</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="news-grid blog-grid">
+          <!-- Card 1 -->
+          <div>
+            <article class="card" data-category="civic">
+              <div class="card-img-wrap">
+                <span class="card-badge">Civic</span>
+                <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80" alt="Council building facade">
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Zoning Reorganization Approved for Downtown</a></h3>
+              <p class="card-desc">Municipal leaders approve a major housing initiative permitting multi-family complexes, sparking mixed community council reviews.</p>
+              <div class="card-meta">
+                <span>By Sarah Chen</span>
+                <span>4 Min Read</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 2 -->
+          <div>
+            <article class="card" data-category="sports">
+              <div class="card-img-wrap">
+                <span class="card-badge">Sports</span>
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80" alt="Runner starting line">
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Local Track Relay Secures Regional Gold</a></h3>
+              <p class="card-desc">High school sprinters secure two relay titles in a dramatic championship final in regional divisions on Saturday afternoon.</p>
+              <div class="card-meta">
+                <span>By Dave Miller</span>
+                <span>3 Min Read</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 3 -->
+          <div>
+            <article class="card" data-category="business">
+              <div class="card-img-wrap">
+                <span class="card-badge">Business</span>
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Merchant street shopfront">
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Downtown Bookstore Celebrates 20 Years</a></h3>
+              <p class="card-desc">Beloved storefront hosts local reader sessions and author roundtables to celebrate two decades of print advocacy.</p>
+              <div class="card-meta">
+                <span>By Elena Rostova</span>
+                <span>5 Min Read</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 4 -->
+          <div>
+            <article class="card" data-category="education">
+              <div class="card-img-wrap">
+                <span class="card-badge">Education</span>
+                <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80" alt="Library stacked books">
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Interactive Math Curriculums Expand</a></h3>
+              <p class="card-desc">Pilot classes incorporating personalized technology programs report substantial growth in logical reasoning assessments.</p>
+              <div class="card-meta">
+                <span>By Mark Gable</span>
+                <span>6 Min Read</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 5 (Classifieds) -->
+          <div>
+            <article class="card" data-category="classifieds">
+              <div class="card-img-wrap">
+                <span class="card-badge">Classifieds</span>
+                <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80" alt="Vintage Heidelberg press details">
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">For Sale: Heidelberg Letterpress (1950s)</a></h3>
+              <p class="card-desc">Complete functional printing machine with assorted type blocks. Owner selling due to studio relocation. Inquiries welcome.</p>
+              <div class="card-meta">
+                <span>$2,400 OBO</span>
+                <span>PressLab</span>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 6 (Events) -->
+          <div>
+            <article class="card" data-category="events">
+              <div class="card-img-wrap">
+                <span class="card-badge">Events</span>
+                <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=800&q=80" alt="Local assembly audience">
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">Annual Community Harvest & Arts Festival</a></h3>
+              <p class="card-desc">Join neighborhood merchants and farmers for fresh local produce, acoustic concerts, and artisan showcase booths.</p>
+              <div class="card-meta">
+                <span>Aug 22, 10am</span>
+                <span>Central Park Plaza</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Pagination dots / buttons -->
+        <div style="display: flex; justify-content: center; gap: 8px; margin-top: 56px; font-family: var(--font-ui);">
+          <button class="btn btn-secondary" style="padding: 10px 18px;"><i data-lucide="chevron-left" style="width: 16px; height: 16px;"></i></button>
+          <button class="btn btn-primary" style="padding: 10px 18px;">1</button>
+          <button class="btn btn-secondary" style="padding: 10px 18px;">2</button>
+          <button class="btn btn-secondary" style="padding: 10px 18px;"><i data-lucide="chevron-right" style="width: 16px; height: 16px;"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-main section-padding">
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <div class="footer-logo">[NEWZ]</div>
+        <p class="footer-desc">Independent news and local community board listings. Providing rigorous local journalism, events schedules, and community columns since 1994.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Categories</div>
+        <ul class="footer-links">
+          <li><a href="blog.html?category=civic">Civic Affairs</a></li>
+          <li><a href="blog.html?category=sports">Local Sports</a></li>
+          <li><a href="blog.html?category=business">Local Business</a></li>
+          <li><a href="blog.html?category=education">School District</a></li>
+        </ul>
+      </div>
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Publications</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Weekly Broadsheet</a></li>
+          <li><a href="coming-soon.html">Daily Newsletter</a></li>
+          <li><a href="blog.html?category=classifieds">Classified Ad Placements</a></li>
+          <li><a href="events.html">Events Board</a></li>
+        </ul>
+      </div>
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About & Editorial Team</a></li>
+          <li><a href="contact.html">Press Room & Advertiser Form</a></li>
+          <li><a href="login.html">Subscriber Login</a></li>
+          <li><a href="coming-soon.html">Print Relaunch Clock</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 NEWZ Media Corporation. All rights reserved. Registered under Press Authority.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

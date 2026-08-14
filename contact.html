@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <title>NEWZ — Contact Our Newsroom & Ad Desk</title>
+  <meta name="description" content="Submit editorial news tips, inquire about advertising placements, or reach subscriber support at NEWZ.">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Contact page layout styling */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+    }
+    .contact-info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .contact-item-block {
+      display: flex;
+      gap: 16px;
+    }
+    .contact-icon-box {
+      width: 48px;
+      height: 48px;
+      background-color: var(--color-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-accent);
+      flex-shrink: 0;
+    }
+    .map-placeholder {
+      width: 100%;
+      height: 300px;
+      background-color: var(--color-secondary);
+      border: 1px dashed var(--color-border);
+      border-radius: var(--border-radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: var(--font-ui);
+      color: var(--color-text-muted);
+      margin-top: 24px;
+    }
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 360px) {
+      .contact-item-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Breaking News Ticker -->
+  <div class="breaking-ticker">
+    <div class="container ticker-wrap">
+      <div class="ticker-title">Breaking News</div>
+      <div class="ticker-content">
+        <span class="ticker-item">Mayor announces new green initiatives for community parks.</span>
+        <span class="ticker-item">Local high school football team clinches state championship.</span>
+        <span class="ticker-item">New organic food market opening downtown this Saturday.</span>
+        <span class="ticker-item">City Council approves budget for community library expansion.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Top Header -->
+  <header class="header-main">
+    <div class="container">
+      <div class="header-logo">The NEWZ Portal</div>
+      <div class="header-tagline">Independent Journalism for the Local Community • Est. 2026</div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="navbar-container">
+    <div class="container navbar">
+      <!-- Logo -->
+      <a href="index.html" class="navbar-logo">[NEWZ]</a>
+      
+      <!-- Desktop Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="home2.html">Home 2</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="nav-actions">
+        <button class="rtl-toggle-btn" aria-label="Toggle RTL Direction"><i data-lucide="arrow-left-right"></i></button>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme Color"><i data-lucide="moon"></i></button>
+        <a href="login.html" class="btn btn-secondary" style="padding: 8px 16px;">Login</a>
+        <button class="hamburger-btn" aria-label="Open Navigation Menu"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Hamburger Drawer -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-drawer">
+    <div class="drawer-header">
+      <span class="navbar-logo">[NEWZ]</span>
+      <button class="drawer-close-btn" aria-label="Close Navigation Menu"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home2.html">Home 2</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+    <div class="drawer-actions">
+      <button class="rtl-toggle-btn btn btn-secondary"><i data-lucide="arrow-left-right"></i> Toggle RTL</button>
+      <button class="theme-toggle-btn btn btn-secondary"><i data-lucide="moon"></i> Toggle Theme</button>
+    </div>
+  </div>
+
+  <main class="section-padding">
+    <div class="container">
+      <h2>Connect with our Editors & Ad Reps</h2>
+      <p class="section-subtext">Submit local news scoops, query about print display ad configurations, or receive print routing support.</p>
+      
+      <div class="contact-grid">
+        <!-- Contact Form Column -->
+        <div style="background-color: var(--color-bg-paper); padding: 40px; border: 1px solid var(--color-border); border-radius: var(--border-radius); box-shadow: var(--shadow);">
+          <h3 style="margin-bottom: 24px;">Send a Dispatch</h3>
+          
+          <form id="contact-form" data-validate="true">
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject Dept.</label>
+              <select id="contact-subject" class="form-control" required style="appearance: none; background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22currentColor%22 stroke-width=%222%22%3E%3Cpath d=%22M6 9l6 6 6-6%22/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 16px center; background-size: 16px;">
+                <option value="">Select subject division...</option>
+                <option value="editorial">Editorial Scoop / News Tip</option>
+                <option value="classifieds">Classified Insertion Request</option>
+                <option value="advertising">Business Display Advertisements</option>
+                <option value="support">Subscription & Route Delivery</option>
+              </select>
+              <div class="error-message">Please select a department subject.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Enter your full name" required>
+              <div class="error-message">Name cannot be left blank.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" placeholder="yourname@domain.com" required>
+              <div class="error-message">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone" class="form-label">Phone Number (Optional)</label>
+              <input type="tel" id="contact-phone" class="form-control" placeholder="(555) 000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message Details</label>
+              <textarea id="contact-message" class="form-control" rows="6" placeholder="Describe your tip or advertisement request details..." required></textarea>
+              <div class="error-message">Message body cannot be empty.</div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-checkbox-label">
+                <input type="checkbox" required>
+                <span>I confirm that the details provided are accurate and obey the journalistic terms.</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 12px;">Submit Dispatch</button>
+          </form>
+        </div>
+
+        <!-- Information Column (Right) -->
+        <div class="contact-info-col">
+          <!-- Newsroom Location -->
+          <div class="contact-item-block">
+            <div class="contact-icon-box"><i data-lucide="map-pin"></i></div>
+            <div>
+              <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Main Newsroom Office</h4>
+              <p style="font-size: var(--size-label); color: var(--color-text-muted); line-height: 1.5; margin-bottom: 0;">
+                404 Gutenberg Broadside Boulevard<br>
+                Press Room District, Suite 100<br>
+                Media City, MC 90124
+              </p>
+            </div>
+          </div>
+
+          <!-- Editorial Tips -->
+          <div class="contact-item-block">
+            <div class="contact-icon-box"><i data-lucide="send"></i></div>
+            <div>
+              <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Newsroom Desk Tip Line</h4>
+              <p style="font-size: var(--size-label); color: var(--color-text-muted); line-height: 1.5; margin-bottom: 0;">
+                Phone: (555) 244-6397<br>
+                Email: newsdesk@newzportal.org
+              </p>
+            </div>
+          </div>
+
+          <!-- Ad Placements -->
+          <div class="contact-item-block">
+            <div class="contact-icon-box"><i data-lucide="credit-card"></i></div>
+            <div>
+              <h4 style="font-size: 1.15rem; margin-bottom: 4px;">Classifieds & Display Sales</h4>
+              <p style="font-size: var(--size-label); color: var(--color-text-muted); line-height: 1.5; margin-bottom: 0;">
+                Phone: (555) 244-6398<br>
+                Email: placements@newzportal.org
+              </p>
+            </div>
+          </div>
+
+          <!-- Styled Map Placeholder -->
+          <div>
+            <h4 style="font-size: 1.15rem; margin-bottom: 8px;">Find Our Pressroom</h4>
+            <div class="map-placeholder">
+              <div>
+                <i data-lucide="map" style="width: 32px; height: 32px; color: var(--color-accent); margin-bottom: 12px;"></i>
+                <div style="font-weight: var(--weight-bold-inline);">Interactive Map Placeholder</div>
+                <div style="font-size: var(--size-caption);">Gutenberg Boulevard Street View</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-main section-padding">
+    <div class="container footer-grid">
+      <!-- Col 1 -->
+      <div class="footer-col">
+        <div class="footer-logo">[NEWZ]</div>
+        <p class="footer-desc">Independent news and local community board listings. Providing rigorous local journalism, events schedules, and community columns since 1994.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
+          <a href="#" class="footer-social-btn" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" style="width: 16px; height: 16px; color: #ffffff;" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <!-- Col 2 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Categories</div>
+        <ul class="footer-links">
+          <li><a href="blog.html?category=civic">Civic Affairs</a></li>
+          <li><a href="blog.html?category=sports">Local Sports</a></li>
+          <li><a href="blog.html?category=business">Local Business</a></li>
+          <li><a href="blog.html?category=education">School District</a></li>
+        </ul>
+      </div>
+      <!-- Col 3 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Publications</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Weekly Broadsheet</a></li>
+          <li><a href="coming-soon.html">Daily Newsletter</a></li>
+          <li><a href="blog.html?category=classifieds">Classified Ad Placements</a></li>
+          <li><a href="events.html">Events Board</a></li>
+        </ul>
+      </div>
+      <!-- Col 4 -->
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links">
+          <li><a href="about.html">About & Editorial Team</a></li>
+          <li><a href="contact.html">Press Room & Advertiser Form</a></li>
+          <li><a href="login.html">Subscriber Login</a></li>
+          <li><a href="coming-soon.html">Print Relaunch Clock</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 NEWZ Media Corporation. All rights reserved. Registered under Press Authority.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
