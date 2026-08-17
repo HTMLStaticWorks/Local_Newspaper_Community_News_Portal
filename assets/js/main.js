@@ -424,4 +424,26 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCountdown();
     const intervalId = setInterval(updateCountdown, 1000);
   }
+
+  // ACTIVE NAVIGATION LINK HIGHLIGHTING
+  // ==========================================================================
+  const setNavActiveState = () => {
+    let currentPath = window.location.pathname.split('/').pop();
+    if (currentPath === '' || currentPath === '/') currentPath = 'index.html';
+    
+    const allNavLinks = document.querySelectorAll('.nav-links a, .drawer-nav a');
+    
+    allNavLinks.forEach(link => {
+      link.classList.remove('active');
+      const linkPath = link.getAttribute('href');
+      
+      if (linkPath && !linkPath.startsWith('http') && !linkPath.startsWith('#')) {
+        if (linkPath === currentPath) {
+          link.classList.add('active');
+        }
+      }
+    });
+  };
+
+  setNavActiveState();
 });

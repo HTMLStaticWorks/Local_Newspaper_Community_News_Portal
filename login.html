@@ -22,7 +22,7 @@
 
   <div class="auth-card">
     <header class="auth-header">
-      <div class="auth-logo">[NEWZ]</div>
+      <a href="index.html" class="auth-logo" style="text-decoration: none; color: inherit; display: inline-block;">[NEWZ]</a>
       <div class="auth-tagline">Subscriber Desk Access</div>
     </header>
 
@@ -33,10 +33,18 @@
         <div class="error-message">Please enter a valid subscriber email address.</div>
       </div>
 
-      <div class="form-group">
+      <div class="form-group" style="margin-bottom: 16px;">
         <label for="password" class="form-label">Password</label>
         <input type="password" id="password" class="form-control" placeholder="••••••••" required>
         <div class="error-message">Password must be at least 8 characters.</div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; font-family: var(--font-ui); font-size: var(--size-label); gap: 8px;">
+        <label class="form-checkbox-label" style="margin: 0; cursor: pointer; display: flex; align-items: center; gap: 8px; white-space: nowrap;">
+          <input type="checkbox" id="remember-me">
+          <span style="color: var(--color-text-body);">Remember me</span>
+        </label>
+        <a href="#" style="color: var(--color-accent); font-weight: var(--weight-bold-inline); text-decoration: none; white-space: nowrap; text-align: right;">Forgot Password?</a>
       </div>
 
       <button type="submit" class="btn btn-primary btn-full" style="margin-top: 12px; padding: 14px 28px;">Login</button>

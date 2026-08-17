@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -46,8 +46,8 @@
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="home2.html" class="active">Home 2</a></li>
-          <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -76,8 +76,8 @@
     <ul class="drawer-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="home2.html" class="active">Home 2</a></li>
-      <li><a href="services.html">Services</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
       <li><a href="events.html">Events</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -92,28 +92,28 @@
 
   <main>
     <!-- Premium Luxury Broadsheet Hero (Full Width Background) -->
-    <section class="premium-hero" style="min-height: 650px; background-color: #111111; color: #ffffff; border-bottom: 2px solid var(--color-accent); padding: 100px 0;">
+    <section class="premium-hero">
       <!-- Background Image -->
-      <div class="premium-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80'); opacity: 0.25;"></div>
+      <div class="premium-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80');"></div>
       <!-- Dark Overlay Gradient -->
       <div class="premium-hero-dark-overlay"></div>
       
       <div class="container premium-hero-container">
         <div class="reveal-staggered" style="max-width: 900px; margin: 0 auto; text-align: center;">
-          <span class="hero-tag" style="background: rgba(184, 29, 36, 0.15); padding: 6px 16px; border-radius: 50px; border: 1px solid var(--color-accent); font-size: 0.85rem; letter-spacing: 0.15em; font-family: var(--font-ui); font-weight: var(--weight-bold-inline); text-transform: uppercase; color: var(--color-accent); display: inline-block;">City Investigation</span>
+          <span class="premium-hero-tag">City Investigation</span>
           
-          <h1 class="hero-title" style="font-family: var(--font-heading); font-size: clamp(2.5rem, 6vw, 4.5rem); color: #ffffff; line-height: 1.1; margin: 24px 0 20px 0; text-shadow: 0 4px 20px rgba(0,0,0,0.4); font-weight: var(--weight-h1);">
+          <h1 class="premium-hero-title">
             Inside the Grid: The Funding Gap of Local Infrastructure
           </h1>
           
-          <p class="hero-lead" style="font-size: var(--size-lead); color: rgba(255, 255, 255, 0.8); line-height: 1.7; max-width: 750px; margin: 0 auto 36px auto; font-family: var(--font-body);">
+          <p class="premium-hero-lead">
             An investigative breakdown of the school renovation delays reveals supply chain bottlenecks and planning oversights in municipal budget management.
           </p>
           
-          <div class="hero-meta" style="justify-content: center; gap: 24px; color: rgba(255, 255, 255, 0.6); margin-bottom: 40px; display: flex; font-family: var(--font-ui); font-size: var(--size-caption);">
-            <span style="display: flex; align-items: center; gap: 6px;"><i data-lucide="user" style="width: 15px; height: 15px; color: var(--color-accent);"></i> By Arthur Sterling</span>
-            <span style="display: flex; align-items: center; gap: 6px;"><i data-lucide="calendar" style="width: 15px; height: 15px; color: var(--color-accent);"></i> August 14, 2026</span>
-            <span style="display: flex; align-items: center; gap: 6px;"><i data-lucide="clock" style="width: 15px; height: 15px; color: var(--color-accent);"></i> 8 Min Read</span>
+          <div class="premium-hero-meta">
+            <span><i data-lucide="user" style="width: 15px; height: 15px; color: var(--color-accent);"></i> By Arthur Sterling</span>
+            <span><i data-lucide="calendar" style="width: 15px; height: 15px; color: var(--color-accent);"></i> August 14, 2026</span>
+            <span><i data-lucide="clock" style="width: 15px; height: 15px; color: var(--color-accent);"></i> 8 Min Read</span>
           </div>
           
           <div style="margin-bottom: 20px;">
@@ -128,25 +128,34 @@
       <div class="container">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
           
-          <article style="border-right: 1px solid var(--color-border); padding-right: 24px;">
-            <div style="font-family: var(--font-ui); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--color-accent); margin-bottom: 6px;">Trending #1</div>
-            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 6px; font-weight: var(--weight-h3);"><a href="blog-single.html" style="color: var(--color-primary);">Historic Theatre to Undergo $2M Renovation</a></h3>
-            <p style="font-size: var(--size-caption); color: var(--color-text-muted); margin-bottom: 8px;">Private donors step forward to restore original plaster reliefs and retro seats.</p>
-            <div style="font-family: var(--font-ui); font-size: 0.8rem; color: var(--color-text-muted);">By Sarah Chen • 3 Min Read</div>
+          <article class="trending-item">
+            <div class="trending-item-img-wrap">
+              <img src="https://images.unsplash.com/photo-1516307365426-bea591f05011?auto=format&fit=crop&w=800&q=80" alt="Historic Theatre" class="trending-item-img">
+            </div>
+            <div class="trending-badge">Trending #1</div>
+            <h3 class="trending-title"><a href="blog-single.html">Historic Theatre to Undergo $2M Renovation</a></h3>
+            <p class="trending-desc">Private donors step forward to restore original plaster reliefs and retro seats.</p>
+            <div class="trending-meta">By Sarah Chen • 3 Min Read</div>
           </article>
 
-          <article style="border-right: 1px solid var(--color-border); padding-right: 24px;">
-            <div style="font-family: var(--font-ui); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--color-accent); margin-bottom: 6px;">Trending #2</div>
-            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 6px; font-weight: var(--weight-h3);"><a href="blog-single.html" style="color: var(--color-primary);">Organic Market Confirms Opening Hours</a></h3>
-            <p style="font-size: var(--size-caption); color: var(--color-text-muted); margin-bottom: 8px;">Downtown vendors promise pesticide-free local honey, cheese, and heirloom crops.</p>
-            <div style="font-family: var(--font-ui); font-size: 0.8rem; color: var(--color-text-muted);">By Dave Miller • 2 Min Read</div>
+          <article class="trending-item">
+            <div class="trending-item-img-wrap">
+              <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=80" alt="Organic Market" class="trending-item-img">
+            </div>
+            <div class="trending-badge">Trending #2</div>
+            <h3 class="trending-title"><a href="blog-single.html">Organic Market Confirms Opening Hours</a></h3>
+            <p class="trending-desc">Downtown vendors promise pesticide-free local honey, cheese, and heirloom crops.</p>
+            <div class="trending-meta">By Dave Miller • 2 Min Read</div>
           </article>
 
-          <article>
-            <div style="font-family: var(--font-ui); font-size: 0.75rem; font-weight: bold; text-transform: uppercase; color: var(--color-accent); margin-bottom: 6px;">Trending #3</div>
-            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 6px; font-weight: var(--weight-h3);"><a href="blog-single.html" style="color: var(--color-primary);">School Board to Debate Sports Allocations</a></h3>
-            <p style="font-size: var(--size-caption); color: var(--color-text-muted); margin-bottom: 8px;">Track team pushes for synthetic ground layering following rainy season issues.</p>
-            <div style="font-family: var(--font-ui); font-size: 0.8rem; color: var(--color-text-muted);">By Mark Gable • 4 Min Read</div>
+          <article class="trending-item">
+            <div class="trending-item-img-wrap">
+              <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=800&q=80" alt="Track team" class="trending-item-img">
+            </div>
+            <div class="trending-badge">Trending #3</div>
+            <h3 class="trending-title"><a href="blog-single.html">School Board to Debate Sports Allocations</a></h3>
+            <p class="trending-desc">Track team pushes for synthetic ground layering following rainy season issues.</p>
+            <div class="trending-meta">By Mark Gable • 4 Min Read</div>
           </article>
 
         </div>
